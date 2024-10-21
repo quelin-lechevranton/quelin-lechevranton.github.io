@@ -1,7 +1,6 @@
 ---
 layout: page
 title: "Shell"
-perma-linl: /shell
 ---
 
 # Shell script & Terminal
