@@ -16,3 +16,11 @@ You can find the source code for Jekyll at GitHub:
 
 
 [jekyll-organization]: https://github.com/jekyll
+
+## notes for later 
+
+custom theme based on Hyde, Moving, Moonwalk
+
+
+
+
