@@ -31,7 +31,7 @@ github_username:  quelin-lechevranton
 
 # Build settings
 #theme: minima
-remote_theme: huangyz0918/moving
+#remote_theme: huangyz0918/moving
 plugins:
   - jekyll-feed
 
