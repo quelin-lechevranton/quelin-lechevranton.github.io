@@ -5,11 +5,79 @@ title: "Shell"
 
 # Shell script & Terminal
 
-## iTerm2
+## Customization (MacOS)
 
-[features](https://iterm2.com/features.html)
+### iTerm2 
 
-[cheat sheet](https://gist.github.com/squarism/ae3613daf5c01a98ba3a)
+Enhanced terminal for MacOS. [Homepage](https://iterm2.com/), [Cheatsheet](https://gist.github.com/squarism/ae3613daf5c01a98ba3a)
+
+### Font
+
+pending...
+
+### `zsh`
+
+cf. [Guide](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH#macos)
+
+Enhanced shell similar to `bash`.
+
+Test if already installed
+
+```sh
+which zsh
+echo $SHELL
+```
+
+Install and set `zsh` as default shell
+
+```sh
+brew install zsh
+chsh -s $(which zsh)
+```
+
+### `zsh` plugins
+
+cf. [`zsh-autosuggestions`](https://github.com/zsh-users/zsh-autosuggestions) & [`zsh-syntax-highlighting`](https://github.com/zsh-users/zsh-syntax-highlighting)
+
+`brew` install
+
+```sh
+brew install zsh-autosuggestions
+echo "source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ~/.zshrc
+```
+
+```sh
+brew install zsh-syntax-highlighting
+echo "source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc
+```
+
+OR local install
+
+```sh
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+echo "source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ~/.zshrc
+```
+
+```sh
+git clone https://github.com/zsh-users/zsh-syntax-highlighting ~/.zsh/zsh-syntax-highlighting
+echo "source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc
+```
+
+### Custom Prompt
+
+in `zsh`
+
+```sh
+PS1='%B%F{141}%n@%m 〉%f%1~ 〉%b'
+PS2='%B 〉%b'
+```
+
+in `bash` 
+
+```sh
+PS1="\[$(tput bold)$(tput setaf 69)\]\u@\h 〉\[$(tput setaf 15)\]\W 〉\[$(tput sgr0)\]"
+PS2="\[$(tput bold) 〉\[$(tput sgr0)\]"
+```
 
 ## Run Command File
 
